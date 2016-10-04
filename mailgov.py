@@ -12,6 +12,7 @@ Mailgov:
 Send a message directly to your governor.
 
 Before using:
+
     1) Make sure dependencies are installed:
         # pip install -r path/to/requirements.txt
     2) Make sure api keys have been set.
@@ -25,16 +26,17 @@ Before using:
                 # export lob_api_key='<your lob api key>'
                 (optional)
                 # export lob_api_version='<your lob api version>'
-
     3) (Optional) Set mailgov alias.
         # alias mailgov='python full/path/to/mailgov.py'
         Note:
             Make sure to include the full path from root to mailgov.py when setting alias.
 
 Usage:
-    if alias is set:
+
+    if alias is set, then run:
         # mailgov [tag] [path/to/inputs.json]
-    if alias is not set:
+
+    if alias is not set, then run:
         # python path/to/mailgov.py [tag] [path/to/inputs.json]
 
     possible tags:
