@@ -183,7 +183,7 @@ def print_err(error):
     print 'For more help on the error:\n\t# mailgov -h'
 
 def print_success(gov_name, url):
-    print 'Your message was sent to %s. Check out the letter at:'
+    print 'Your message was sent to %s. Check out the letter at:' % gov_name
     print '\t%s\n' % url
 
 
