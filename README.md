@@ -12,10 +12,10 @@ Before using:
         Options:
             - copy api keys into mailgov.py at line 93 and line 97
             - set environment variables:
-                # export google_api_key='<your google api key>'
-                # export lob_api_key='<your lob api key>'
+                # export google_api_key=<your google api key>
+                # export lob_api_key=<your lob api key>
                 (optional)
-                # export lob_api_version='<your lob api version>'
+                # export lob_api_version=<your lob api version>
     3) (Optional) Set mailgov alias.
         # alias mailgov='python full/path/to/mailgov.py'
         Note:
