@@ -116,7 +116,6 @@ def main():
 
     except HttpError, e:
         err_info = json.loads(e.__dict__['content'])
-        print err_info
         error = 'code: %s -- %s' % (err_info['error']['code'], err_info['error']['message'])
         print '\n'
         print_err(error)
@@ -180,7 +179,7 @@ def print_err(error):
     '''Prints the error to the user.'''
     print 'There was an error: '
     print '\t%s\n' % error
-    print 'For more help on the error:\n\t# mailgov -h'
+    print 'For more help on the error, run:\n\t# mailgov -h\n'
 
 def print_success(gov_name, url):
     print 'Your message was sent to %s. Check out the letter at:' % gov_name
