@@ -173,7 +173,7 @@ def main():
 
 
     print '\n'
-    print_success(response['url'])
+    print_success(governor['name'],response['url'])
     return
 
 def print_err(error):
@@ -182,8 +182,8 @@ def print_err(error):
     print '\t%s\n' % error
     print 'For more help on the error:\n\t# mailgov -h'
 
-def print_success(url):
-    print 'Your message was sent. Check it out at:'
+def print_success(gov_name, url):
+    print 'Your message was sent to %s. Check out the letter at:'
     print '\t%s\n' % url
 
 

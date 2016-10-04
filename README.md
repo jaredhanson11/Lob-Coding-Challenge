@@ -1,5 +1,5 @@
-Mailgov:
-Send a message directly to your governor.
+# Mailgov
+A command line tool used to send a message directly to your governor, using API's from Lob and Google Civic Information.
 
 Before using:
 
@@ -33,4 +33,6 @@ Usage:
         -h : show help
         -m : use inputs from json file
 
-    If using -m, the input file must be a valid json file with the inputs in a dictionary. The dictionary can have the keys, 'message', 'name', 'address_line1', 'address_line2', 'city', 'state', 'zip_code'
+    If using -m, the input file must be a valid json file with the inputs in a dictionary.
+    The dictionary can have the keys:
+        'message', 'name', 'address_line1', 'address_line2', 'city', 'state', 'zip_code'
